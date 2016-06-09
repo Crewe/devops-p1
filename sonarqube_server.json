@@ -1,0 +1,29 @@
+{
+    "variables": {
+        "PACKER_OS_FLAVOUR": "ubuntu",
+        "PACKER_BOX_NAME": "ubuntu-14.04.4-server-amd64",
+        "AWS_ACCESS_KEY_ID": "{{env `AWS_ACCESS_KEY_ID`}}",
+        "AWS_SECRET_ACCESS_KEY": "{{env `AWS_SECRET_ACCESS_KEY`}}"
+    },
+    "builders": [
+        {
+            "type": "amazon-ebs",
+            "access_key": "{{ user `AWS_ACCESS_KEY_ID` }}",
+            "secret_key": "{{ user `AWS_SECRET_ACCESS_KEY` }}",
+            "region": "us-east-1",
+            "source_ami": "ami-10b68a78",
+            "instance_type": "c3.large",
+            "ssh_username": "ubuntu",
+            "ami_name": "sonarqube-app-server {{timestamp}}"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "execute_command": "echo 'packer' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
+            "scripts": [
+                "scripts/install_applications.sh"
+            ]
+        }
+    ]
+}

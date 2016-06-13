@@ -1,8 +1,10 @@
 # Cloud Service Analysis
 
+_All prices and rates are as of July 6, 2016._
+
 Currently ChalkFull makes use of a server farm and is looking to move to the cloud. However the team has little knowledge of this realm and so any platform that suits their needs and costs will suffice. With a back-end using python and front-end using JavaScript, technologies which are widely supported, they should have no issue finding a solution with Google, Amazon, or DigitalOcean. Since they are using a python stack, Microsoft's Azure platform would likely not be a good fit.
 
-The company is also looking to use MongoDB which is readily provisionable through AWS using Cloud Manager Standard at a cost of [$39 USD per month][1] as of July 6, 2016. However they will also have the option to host in any other cloud provider if they wish to do the work manually. 
+The company is also looking to use MongoDB which is readily provisionable through AWS using Cloud Manager Standard at a cost of [$39 USD per month][1]. However they will also have the option to host in any other cloud provider if they wish to do the work manually. 
 
 Dealing with elementary and secondary schools (assuming US), there isn't limitation to where the servers need to be hosted, and as such doesn't disqualify any of the remaining 3 services.
 

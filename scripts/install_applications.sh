@@ -10,10 +10,10 @@ sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 
 # Install Oracle JRE and JDK
-sudo apt-get install -y oracle-java8-installer
+sudo apt-get install oracle-java8-installer
 
 # Set up environment variables
-sudo apt-get install -y oracle-java8-set-default
+sudo apt-get install oracle-java8-set-default
 
 # Check the version
 java -version

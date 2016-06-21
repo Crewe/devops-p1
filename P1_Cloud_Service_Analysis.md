@@ -31,7 +31,7 @@ In all cases I assume everyday usage based on the above averages, and estimation
 * 3 database servers for regular use 
 * 2 high load servers
 
-All of which are used primarily between the hours of 07:00 AST to 20:00 PST (10:00 UTC - UTC 03:00 UTC) 17 hours.
+All of which are used primarily between the hours of 10:00 UTC - UTC 03:00 UTC to cover typical working hours from East coast to the West.
 
 ### Google
 #### [Compute][5]
@@ -57,7 +57,7 @@ But it being a new feature and adoption will ramp up. $0.03/GB for first TB then
 
     (0.03 * 1000) + (0.0295 * 120) = $33.54 / month * 3months * 3 servers = $301.86
 
-__Total: 3083.5 / year__
+__Total: $3083.5 / year__
 
 #### [DigitalOcean][9]
 
@@ -66,7 +66,7 @@ Though this looks good at first due to it's low rates and capable processors and
 ## Conclusion
 
 DigitalOcean is the simpler of the 3 in terms of offerings. They are simple and plans
-increase in a linear fashion, which would make it easy to use for a trial, or app that would be stand alone, without much variability, so it doesn't quite suit the needs of the company in addition to the incredible cost of storage mentioned above.
+increase in a linear fashion, which would make it easy to use for a trial, or application that would be stand alone, without much variability, so it doesn't quite suit the needs of the company in addition to the incredible cost of storage mentioned above.
 
 Google's cloud compute offers the easiest set, with automatic discounts based on usage, and a small set of preset severs that auto-scale as well as a custom one. It's hard to determine what you costs will be month-to-month without some guessing, particularly on a new feature like this. And with those estimates it's twice as much as Amazons.
 
